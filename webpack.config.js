@@ -16,6 +16,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: 'index.js',
+    libraryTarget: 'commonjs',
   },
   module: {
     rules: [
@@ -35,7 +36,7 @@ module.exports = {
       {
         test: /\.(css|scss)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
-      }
+      },
     ],
   },
 
