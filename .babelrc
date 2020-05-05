@@ -3,15 +3,6 @@
     "@babel/preset-env",
     "@babel/preset-react",
     "@babel/preset-typescript"
-  ],
-  "plugins": [
-    ["module-resolver", {
-      "alias": {
-        "@.storybook": "./.storybook",
-        "@src": "./src"
-      },
-      "extensions": [".js", ".ts"]
-    }]
   ]
 }
 

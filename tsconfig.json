@@ -19,14 +19,6 @@
     "isolatedModules": true,
     "jsx": "react",
     "baseUrl": ".",
-    "paths": {
-      "@.storybook/*": [
-        "./.storybook/*"
-      ],
-      "@src/*": [
-        "./src/*"
-      ],
-    },
   },
   "include": [
     "src/**/*",

@@ -1,8 +1,5 @@
 import React, { FC } from 'react'
-
-export interface HelloProps {
-  message: string
-}
+import { HelloProps } from './Hello.types'
 
 export const Hello: FC<HelloProps> = ({message}) => {
   return (
