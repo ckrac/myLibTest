@@ -16,9 +16,6 @@ module.exports = {
   output: {
     path: path.join(__dirname, './dist'),
     filename: 'index.js',
-    publicPath: '/',
-    library: 'uiLibrary',
-    libraryTarget: 'commonjs',
   },
   module: {
     rules: [
@@ -38,13 +35,7 @@ module.exports = {
       {
         test: /\.(css|scss)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
-      },
-      // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-      {
-        enforce: 'pre',
-        test: /\.js$/,
-        loader: 'source-map-loader',
-      },
+      }
     ],
   },
 
