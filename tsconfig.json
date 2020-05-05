@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "declaration": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [ "es2015", "dom" ],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "rootDirs": ["src"],
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@.storybook/*": [
+        "./.storybook/*"
+      ],
+      "@src/*": [
+        "./src/*"
+      ],
+    },
+  },
+  "include": [
+    "src/**/*",
+    ".storybook/**/*", "stories"
+  ]
+}

@@ -1,0 +1,49 @@
+@each $key, $value in $spaces {
+  .pt-#{$key} {
+    padding-top: $value;
+  }
+  .pb-#{$key} {
+    padding-bottom: $value;
+  }
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+  .pr-#{$key} {
+    padding-right: $value;
+  }
+  .pl-#{$key} {
+    padding-left: $value;
+  }
+  .px-#{$key} {
+    padding-right: $value;
+    padding-left: $value;
+  }
+  .p-#{$key} {
+    padding: $value;
+  }
+  .mt-#{$key} {
+    margin-top: $value;
+  }
+  .mb-#{$key} {
+    margin-bottom: $value;
+  }
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .mr-#{$key} {
+    margin-right: $value;
+  }
+  .ml-#{$key} {
+    margin-left: $value;
+  }
+  .mx-#{$key} {
+    margin-right: $value;
+    margin-left: $value;
+  }
+  .m-#{$key} {
+    margin: $value;
+  }
+}
+

@@ -1,0 +1,10 @@
+// spacing function to get mapped spaces variable
+
+@function spacing($space) {
+  @if not map-has-key($spaces, $space) {
+    @error 'There is no spacing named `#{$space}` in $spaces. '
+         + 'Spacing should be one of #{map-keys($spaces)}.';
+  }
+
+  @return map-get($spaces, $space);
+}
